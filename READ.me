@@ -1,0 +1,31 @@
+
+# Challenge 1
+
+For the first challege we have to create a serverless api that can be triggered by shopify when an order is created.
+
+
+## Tech Being used
+
+Cloud Provider: AWS
+
+Deployments: Serverless Framework
+
+    serverless was chosen because it makes it very simple to deploy to AWS and
+    it takes care of the entire process of creating the api in API Gateway
+    creating the Lambda, and deploying the node_modules(if necessary)
+
+Testing: Jest
+
+## How To Deploy
+    0. If you don't have a serverless account
+        a. Go to serverless.com and sign up
+        b. Go to settings -> providers to connect your AWS account to Serverless
+
+    1. Install serverless globally: npm install -g serverless
+    2. Execute the following to login locally
+        serverless login
+
+    > End of Optional steps
+    3. Clone the project into a desired directory
+    4. Run yarn or npm install to install packages
+    5. execute: yarn deploy or npm run deploy to deploy to AWS
